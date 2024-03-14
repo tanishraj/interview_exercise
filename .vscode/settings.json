@@ -7,7 +7,7 @@
   },
   "editor.formatOnType": true,
   "editor.formatOnPaste": true,
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
   "editor.fontWeight": "normal",
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
