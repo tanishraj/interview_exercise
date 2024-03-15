@@ -1,11 +1,13 @@
 import React from 'react';
+
 import { useFetch } from '../../hooks/useFetch';
-import './article-list.scss';
 import { ArticleItem } from '../article-item/article-item';
+import { ARTICLE_API_URL } from '../../utils/constants';
+import './article-list.scss';
 
 export const ArticleList = () => {
   const { data: articleList } = useFetch(
-    'https://api.nytimes.com/svc/mostpopular/v2/viewed/1.json?api-key=mKLOO4LGyXmOJaleFjlZc34CXubtIW1W'
+    `${process.env.API_BASE_URL}${ARTICLE_API_URL}${process.env.API_KEY}`
   );
 
   return (

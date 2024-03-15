@@ -2,15 +2,18 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 
 import { useFetch } from '../../hooks/useFetch';
+import { ARTICLE_DETAIL_API_URL } from '../../utils/constants';
 import './article-details.scss';
 
 export const ArticleDetails = () => {
   const { uri } = useParams();
   const { data } = useFetch(
-    `https://api.nytimes.com/svc/search/v2/articlesearch.json?fq=uri:"${uri}"&&api-key=mKLOO4LGyXmOJaleFjlZc34CXubtIW1W`
+    `${process.env.API_BASE_URL}${ARTICLE_DETAIL_API_URL}"${uri}"&&api-key=${process.env.API_KEY}`
   );
   const articleContent = data?.response?.docs?.[0];
   const IMAGE_URL = 'https://static01.nyt.com/';
+
+  if (!articleContent) return;
 
   return (
     <div className='article-container'>
