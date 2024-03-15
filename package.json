@@ -2,10 +2,11 @@
   "name": "parcel-react-starter",
   "version": "1.0.0",
   "description": "React + Parcel + ESLint + VSCode + SCSS + JEST + React Testing Library",
-  "main": "index.js",
+  "source": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
     "build": "parcel build index.html",
+    "serve": "parcel serve --open",
     "lint": "eslint src --ext .js,.jsx",
     "lint:fix": "eslint src --ext .js,.jsx --fix && yarn format",
     "test": "jest",

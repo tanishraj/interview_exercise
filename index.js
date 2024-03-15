@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import { RouterProvider } from 'react-router-dom';
 
 import { AppRouter } from './src/router/app-router';
-import './src/theme/main.scss';
 import './index.scss';
 
 const container = document.getElementById('root');
