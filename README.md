@@ -61,22 +61,26 @@ To get started with this project, follow these steps:
 1. Run the below command to see the coverage report
 `yarn test`
 
+
 2. Open the file available on the below path to see the test coverage.
-`coverage/lcov-report/index.html`
+``coverage/lcov-report/index.html``
 
 
 ## Steps to build the project
 
 1. Run the below command to build the app
+
 `yarn build`
 
 2. once the build is complete, `dist` folder will be created. To run the production build app.
+
 `yarn serve`
 
 
 ## Setps to fix the linting issue
 
 1. Run the below command to fix potential linting issues
+
 `yarn lint:fix`
 
 
