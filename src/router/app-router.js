@@ -2,7 +2,8 @@ import React from 'react';
 import { createBrowserRouter } from 'react-router-dom';
 
 import { App } from '../App';
-import { DummyComponent } from '../components/dummy-component';
+import { HomePage } from '../pages/home/home-page';
+import { ArticlePage } from '../pages/article/article-page';
 
 export const AppRouter = createBrowserRouter([
   {
@@ -11,7 +12,11 @@ export const AppRouter = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <DummyComponent />,
+        element: <HomePage />,
+      },
+      {
+        path: '/article/:uri',
+        element: <ArticlePage />,
       },
     ],
   },

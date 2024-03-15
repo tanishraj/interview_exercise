@@ -1,3 +1,16 @@
 .header-wrapper {
   background: $jet-black;
+
+  .header-container {
+    max-width: $screen-xl;
+    padding: $space-sm;
+    text-align: center;
+    margin: 0 auto;
+    color: $naples-yellow;
+
+    h1 {
+      font-weight: $font-weight-xl;
+      letter-spacing: 0.1rem;
+    }
+  }
 }

@@ -6,10 +6,8 @@ import './App.scss';
 
 export function App() {
   return (
-    <>
-      <DefaultTemplate>
-        <Outlet />
-      </DefaultTemplate>
-    </>
+    <DefaultTemplate>
+      <Outlet />
+    </DefaultTemplate>
   );
 }

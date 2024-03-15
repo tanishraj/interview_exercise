@@ -1,0 +1,14 @@
+.footer-wrapper {
+  margin-top: auto;
+  background-color: $jet-black;
+  .footer-container {
+    text-align: center;
+    padding: $space-xs;
+    p {
+      color: $mint-cream;
+      font-size: $font-size-md;
+      line-height: $font-line-height-md;
+      text-align: center;
+    }
+  }
+}

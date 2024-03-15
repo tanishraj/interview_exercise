@@ -5,7 +5,7 @@ export const Header = () => {
   return (
     <div className='header-wrapper'>
       <div className='header-container'>
-        <h1>Header</h1>
+        <h1>NewYork Times Popular Articles</h1>
       </div>
     </div>
   );

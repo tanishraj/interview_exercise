@@ -1,0 +1,57 @@
+.article-link {
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0px 0px 10px $super-blue;
+  background: $super-blue;
+  border: 1px solid $mint-cream;
+  &:hover {
+    transform: scale(1.01);
+    border-color: $delft-blue;
+  }
+}
+
+.article-list-item {
+  display: flex;
+  gap: $space-sm;
+  padding: $space-sm;
+  color: $delft-blue;
+
+  img {
+    width: 200px;
+    object-fit: cover;
+  }
+
+  .article-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: $space-sm;
+  }
+  .summary {
+    display: flex;
+    flex-direction: column;
+    gap: $space-xs;
+    color: $jet-black;
+    .title {
+      font-size: $font-size-xl;
+      line-height: $font-line-height-xl;
+      font-weight: $font-weight-xl;
+    }
+    .abstract {
+      font-size: $font-size-sm;
+    }
+    .author {
+      font-size: $font-size-sm;
+      font-weight: $font-weight-xl;
+      color: $delft-blue;
+    }
+  }
+
+  .publisher {
+    font-size: $font-size-sm;
+  }
+
+  @include sm {
+    flex-direction: column;
+  }
+}

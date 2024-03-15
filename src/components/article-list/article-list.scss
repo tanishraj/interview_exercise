@@ -1,0 +1,6 @@
+.article-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: $space-sm;
+  padding: $space-sm 0;
+}
