@@ -1,4 +1,5 @@
-#root {
-  margin: 0 auto;
-  text-align: center;
-}
+@use './theme/fonts.scss';
+@use './theme/colors.scss';
+@use './theme/space.scss';
+@use './theme/breakpoints.scss';
+@use './theme/mixins.scss';
