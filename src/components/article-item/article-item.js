@@ -7,9 +7,13 @@ export const ArticleItem = ({ article }) => {
   return (
     <Link
       className='article-link'
+      data-testid='article-link'
       to={`/article/${encodeURIComponent(article?.uri)}`}
     >
-      <div className='article-list-item'>
+      <div
+        className='article-list-item'
+        data-testid='article-item'
+      >
         <img
           src={article?.media?.[0]?.['media-metadata']?.[2]?.url}
           alt={article?.title}
