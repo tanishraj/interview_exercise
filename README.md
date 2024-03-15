@@ -54,7 +54,7 @@ To get started with this project, follow these steps:
 4. Start the development server:
 `yarn start`
 
-5. Open your browser and navigate to http://localhost:1234 to see the application running.
+5. Open your browser and navigate to `http://localhost:1234` to see the application running.
 
 ## Steps to run the test coverage
 
@@ -69,18 +69,15 @@ To get started with this project, follow these steps:
 ## Steps to build the project
 
 1. Run the below command to build the app
-
 `yarn build`
 
 2. once the build is complete, `dist` folder will be created. To run the production build app.
-
 `yarn serve`
 
 
 ## Setps to fix the linting issue
 
 1. Run the below command to fix potential linting issues
-
 `yarn lint:fix`
 
 
