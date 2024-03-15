@@ -65,7 +65,23 @@ To get started with this project, follow these steps:
 `coverage/lcov-report/index.html`
 
 
+## Steps to build the project
 
+1. Run the below command to build the app
+`yarn build`
+
+2. once the build is complete, `dist` folder will be created. To run the production build app.
+`yarn serve`
+
+
+## Setps to fix the linting issue
+
+1. Run the below command to fix potential linting issues
+`yarn lint:fix`
+
+
+
+##
 For additional configuration or customization, refer to the respective documentation of the tools used in this project.
 
 ## Contributing
