@@ -7,13 +7,13 @@ import './article-list.scss';
 
 export const ArticleList = () => {
   const { data: articleList } = useFetch(
-    `${process.env.API_BASE_URL}${ARTICLE_API_URL}${process.env.API_KEY}`
+    `${process?.env?.API_BASE_URL}${ARTICLE_API_URL}${process?.env?.API_KEY}`
   );
 
   return (
     <div className='article-list-container'>
       {articleList &&
-        articleList.results.map(article => (
+        articleList?.results?.map(article => (
           <ArticleItem
             article={article}
             key={article?.id}
