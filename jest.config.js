@@ -24,12 +24,10 @@ const config = {
   // collectCoverageFrom: undefined,
 
   // The directory where Jest should output its coverage files
-  coverageDirectory: "coverage",
+  coverageDirectory: 'coverage',
 
   // An array of regexp pattern strings used to skip coverage collection
-  // coveragePathIgnorePatterns: [
-  //   "/node_modules/"
-  // ],
+  coveragePathIgnorePatterns: ['/node_modules/', '/utils/test-utils/'],
 
   // Indicates which provider should be used to instrument code for coverage
   // coverageProvider: "babel",
@@ -89,7 +87,7 @@ const config = {
   // ],
 
   // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
-  moduleNameMapper: { "\\.(css|less|sass|scss)$": "identity-obj-proxy" },
+  moduleNameMapper: { '\\.(css|less|sass|scss)$': 'identity-obj-proxy' },
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
   // modulePathIgnorePatterns: [],
@@ -125,7 +123,7 @@ const config = {
   // rootDir: undefined,
 
   // A list of paths to directories that Jest should use to search for files in
-  roots: ["src"],
+  roots: ['src'],
 
   // Allows you to use a custom runner instead of Jest's default test runner
   // runner: "jest-runner",
@@ -143,7 +141,7 @@ const config = {
   // snapshotSerializers: [],
 
   // The test environment that will be used for testing
-  testEnvironment: "jsdom",
+  testEnvironment: 'jsdom',
 
   // Options that will be passed to the testEnvironment
   // testEnvironmentOptions: {},
@@ -173,8 +171,8 @@ const config = {
 
   // A map from regular expressions to paths to transformers
   transform: {
-    "^.+\\.jsx?$": "babel-jest",
-    "\\.(scss)$": "jest-transform-stub",
+    '^.+\\.jsx?$': 'babel-jest',
+    '\\.(scss)$': 'jest-transform-stub',
   },
 
   // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
