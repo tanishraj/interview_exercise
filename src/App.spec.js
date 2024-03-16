@@ -1,6 +1,5 @@
 import React from 'react';
-import { render } from '@testing-library/react';
-import { MemoryRouter } from 'react-router-dom';
+import { renderWithRouter } from './utils/test-utils/renderWithRouter';
 import '@testing-library/jest-dom';
 import { App } from './App';
 
@@ -17,21 +16,13 @@ jest.mock('react-router-dom', () => ({
 
 describe('App Component', () => {
   test('renders DefaultTemplate', () => {
-    const { getByTestId } = render(
-      <MemoryRouter>
-        <App />
-      </MemoryRouter>
-    );
+    const { getByTestId } = renderWithRouter(<App></App>);
     const defaultTemplate = getByTestId('default-template');
     expect(defaultTemplate).toBeInTheDocument();
   });
 
   test('renders Outlet inside DefaultTemplate', () => {
-    const { getByTestId } = render(
-      <MemoryRouter>
-        <App />
-      </MemoryRouter>
-    );
+    const { getByTestId } = renderWithRouter(<App />);
     const outlet = getByTestId('mock-outlet');
     expect(outlet).toBeInTheDocument();
   });

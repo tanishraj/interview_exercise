@@ -1,7 +1,7 @@
 import React from 'react';
-import { render } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import { MemoryRouter } from 'react-router-dom';
+
+import { renderWithRouter } from '../../utils/test-utils/renderWithRouter';
 import { ArticleItem } from './article-item';
 
 describe('ArticleItem Component', () => {
@@ -15,10 +15,8 @@ describe('ArticleItem Component', () => {
   };
 
   test('renders article details correctly', () => {
-    const { getByText, getByTestId } = render(
-      <MemoryRouter>
-        <ArticleItem article={article} />
-      </MemoryRouter>
+    const { getByText, getByTestId } = renderWithRouter(
+      <ArticleItem article={article} />
     );
 
     const articleLink = getByTestId('article-link');
@@ -38,10 +36,8 @@ describe('ArticleItem Component', () => {
       media: [{ 'media-metadata': [{ url: 'mock-image-url' }] }],
     };
 
-    const { getByTestId } = render(
-      <MemoryRouter>
-        <ArticleItem article={articleWithMissingData} />
-      </MemoryRouter>
+    const { getByTestId } = renderWithRouter(
+      <ArticleItem article={articleWithMissingData} />
     );
 
     const articleLink = getByTestId('article-link');

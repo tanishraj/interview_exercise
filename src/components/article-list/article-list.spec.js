@@ -1,6 +1,5 @@
 import React from 'react';
-import { render } from '@testing-library/react';
-import { MemoryRouter } from 'react-router-dom';
+import { renderWithRouter } from '../../utils/test-utils/renderWithRouter';
 import '@testing-library/jest-dom';
 
 import { ArticleList } from './article-list';
@@ -36,11 +35,7 @@ describe('ArticleList Component', () => {
     };
 
     useFetch.mockReturnValueOnce({ data: mockArticleList });
-    const { getAllByTestId } = render(
-      <MemoryRouter>
-        <ArticleList />
-      </MemoryRouter>
-    );
+    const { getAllByTestId } = renderWithRouter(<ArticleList />);
     const articleItems = getAllByTestId('article-item');
     expect(articleItems).toHaveLength(2);
 
