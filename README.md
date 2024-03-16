@@ -12,7 +12,7 @@ Welcome to Parcel React! This repository serves as a starter template for buildi
 
 ## Introduction
 
-Parcel React Starter is a boilerplate for setting up React projects quickly with modern tooling. It includes:
+Parcel + React has been used for setting up React projects quickly with modern tooling. It includes:
 
 - **React**: A JavaScript library for building user interfaces.
 - **Parcel**: A fast, zero-config web application bundler.
@@ -38,7 +38,7 @@ This project comes with the following npm scripts defined in the `package.json` 
 
 You can run these scripts using the `npm run` command followed by the script name.
 
-## Steps to run the project locally
+### Steps to run the project locally
 
 To get started with this project, follow these steps:
 
@@ -56,17 +56,21 @@ To get started with this project, follow these steps:
 
 5. Open your browser and navigate to `http://localhost:1234` to see the application running.
 
-## Steps to run the test coverage
+### Steps to generate the unit test coverage report
 
 1. Run the below command to see the coverage report
-`yarn test`
-
+`yarn test:coverage`
 
 2. Open the file available on the below path to see the test coverage.
-``coverage/lcov-report/index.html``
+`coverage/lcov-report/index.html`
 
 
-## Steps to build the project
+### Run the end-to-end tests
+Run the below command to perform end-to-end testing
+`yarn cypress`
+
+
+### Steps to build the project
 
 1. Run the below command to build the app
 `yarn build`
@@ -74,10 +78,13 @@ To get started with this project, follow these steps:
 2. once the build is complete, `dist` folder will be created. To run the production build app.
 `yarn serve`
 
+### Check for lint errors
+Run the below command to check potential linting issues
+`yarn lint`
 
-## Setps to fix the linting issue
 
-1. Run the below command to fix potential linting issues
+### Fix the linting issues
+Run the below command to fix potential linting issues
 `yarn lint:fix`
 
 
