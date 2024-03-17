@@ -40,7 +40,7 @@ This project comes with the following npm scripts defined in the `package.json` 
 
 You can run these scripts using the `npm run` command followed by the script name.
 
-### Steps to run the project locally
+## Steps to run the project locally
 
 To get started with this project, follow these steps:
 
@@ -58,7 +58,7 @@ To get started with this project, follow these steps:
 
 5. Open your browser and navigate to `http://localhost:1234` to see the application running.
 
-### Steps to generate the unit test coverage report
+## Steps to generate the unit test coverage report
 
 1. Run the below command to see the coverage report
 `yarn test:coverage`
@@ -67,12 +67,12 @@ To get started with this project, follow these steps:
 `coverage/lcov-report/index.html`
 
 
-### Run the end-to-end tests
+## Run the end-to-end tests
 Run the below command to perform end-to-end testing
 `yarn cypress`
 
 
-### Steps to build the project
+## Steps to build the project
 
 1. Run the below command to build the app
 `yarn build`
@@ -80,12 +80,12 @@ Run the below command to perform end-to-end testing
 2. once the build is complete, `dist` folder will be created. To run the production build app.
 `yarn serve`
 
-### Check for lint errors
+## Check for lint errors
 Run the below command to check potential linting issues
 `yarn lint`
 
 
-### Fix the linting issues
+## Fix the linting issues
 Run the below command to fix potential linting issues
 `yarn lint:fix`
 
