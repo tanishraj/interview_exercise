@@ -1,6 +1,6 @@
 # Parcel + React
 
-Welcome to Parcel React! This repository serves as a starter template for building React applications using Parcel bundler along with additional tooling for linting, formatting, testing, and development. It includes features such as ESLint, Prettier, Jest, React Testing Library, SCSS support, and more.
+Welcome to Parcel React! This repository serves React applications using Parcel bundler along with additional tooling for linting, formatting, testing, and development. It includes features such as ESLint, Prettier, Jest, React Testing Library, SCSS support, and more.
 
 ## Table of Contents
 
@@ -34,6 +34,8 @@ This project comes with the following npm scripts defined in the `package.json` 
 - `lint:fix`: Fixes linting errors automatically using ESLint and formats code using Prettier.
 - `test`: Runs tests using Jest.
 - `test:watch`: Runs tests in watch mode using Jest.
+- `test:coverage`: Runs tests coverage for unit tests using Jest.
+- `test:cypress`: Runs end-to-end test using cypress.
 - `format`: Formats code using Prettier.
 
 You can run these scripts using the `npm run` command followed by the script name.
